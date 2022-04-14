@@ -11,5 +11,6 @@ require "vendo"
 # require "pry"
 # Pry.start
 
+@client = Vendo::Client.new("egpXE1sbByrU-E9kZ3o5gepo3WGr1eD4OJUOH3DSsRI")
 require "irb"
 IRB.start(__FILE__)
