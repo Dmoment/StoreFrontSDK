@@ -41,6 +41,10 @@ module Vendo
       AccountResource.new(self)
     end
 
+    def line_item
+      LineItemResource.new(self)
+    end
+
     def inspect
       "#<Vendo::Client>"
     end

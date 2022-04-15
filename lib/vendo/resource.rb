@@ -27,7 +27,10 @@ module Vendo
     end
 
     def default_headers
-      { Authorization: "Bearer #{client.oauth_token}"}
+      { 
+        "Authorization" => "Bearer #{client.oauth_token}",
+        "X-Vendo-Order-Token" => "Order token #{client.order_token}"
+      }
     end
 
     def handle_response(response)

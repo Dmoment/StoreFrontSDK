@@ -16,6 +16,8 @@ module Vendo
   autoload :AccountResource, "vendo/resources/account_resource"
   autoload :Cart, "vendo/objects/cart"
   autoload :CartResource, "vendo/resources/cart_resource"
+  autoload :LineItem, "vendo/objects/line_item"
+  autoload :LineItemResource, "vendo/resources/line_item_resource"
   class Error < StandardError; end
   # Your code goes here...
 end
