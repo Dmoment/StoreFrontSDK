@@ -6,12 +6,47 @@ module Vendo
       @client = client
     end
 
-    def get_request(url, params: {})
-      client.connection.get(url, params)
+    def get_request(url, params: {}, headers: {})
+      handle_response client.connection.get(url, params, default_headers.merge(headers))
     end
 
-    def post_request(url, params: {})
-      client.connection.post(url, params)
+    def post_request(url, body: {}, headers: {})
+      handle_response client.connection.post(url, body, default_headers.merge(headers))
+    end
+
+    def put_request(url, body: {})
+      handle_response client.connection.put(url, body )
+    end
+
+    def patch_request(url, body: {})
+      handle_response client.connection.patch(url, body)
+    end
+
+    def delete_request(url, params: {})
+      handle_response client.connection.delete(url, params)
+    end
+
+    def default_headers
+      { Authorization: "Bearer #{client.oauth_token}"}
+    end
+
+    def handle_response(response)
+      message = response.body['error']
+      case response.status
+      when 400
+        raise Error, message
+      when 401
+        raise Error, message
+      when 403
+        raise Error, message
+      when 404
+        raise Error, message
+      when 429
+        raise Error, message
+      when 500
+        raise Error, message
+      end
+      response
     end
 
 

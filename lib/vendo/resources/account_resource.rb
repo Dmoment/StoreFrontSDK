@@ -3,7 +3,7 @@ module Vendo
 
     # For authentication
     def login(**params)
-     Account.new post_request("/spree_oauth/token", params: params).body
+     Account.new post_request("/spree_oauth/token", body: params).body
     end
 
     # For getting user account info
