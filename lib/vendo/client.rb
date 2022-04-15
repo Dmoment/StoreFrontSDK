@@ -45,6 +45,10 @@ module Vendo
       LineItemResource.new(self)
     end
 
+    def coupon_code
+      CouponResource.new(self)
+    end
+
     def inspect
       "#<Vendo::Client>"
     end
