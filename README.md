@@ -33,8 +33,38 @@ API methods are available as class instance methods
     client.login(grant_type: "password", username: "vendo@example.com", password: "vendo123")
 
 ```
+#Create cart on client instance
 
-TODO: Write usage instructions here
+```ruby
+    # create cart
+    cart = client.cart.create(request_body)
+```
+
+Once cart is created then in all the other request headers order_token will be assigned
+
+# Retrieve cart
+```ruby
+    cart = client.cart.retrieve
+```
+
+# Methods for Line Items
+
+```ruby
+    # Add line item to cart
+    line_item = client.line_item.add_item(request_body)
+
+    # Change quantity 
+    client.line_item.set_quantity(request_body)
+
+    # Delete line item
+    client.line_item.delete(id: id_of_line_item)
+```
+ # Methods for applying coupon code
+
+ ```ruby
+    client.coupon_code.apply_coupon({ "coupon_code": "DISCOUNT10" })
+ ```       
+
 
 ## Development
 
