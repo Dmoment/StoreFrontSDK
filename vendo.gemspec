@@ -36,6 +36,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency "oj", "~> 3.13.11"
   spec.add_development_dependency "pry", '~> 0.14.1'
   spec.add_development_dependency "pry-nav", '~> 1.0'
+  spec.add_development_dependency "vcr", '~> 6.1'
+  spec.add_development_dependency "webmock", '~> 3.14'
 
   # For more information and examples about making a new gem, checkout our
   # guide at: https://bundler.io/guides/creating_gem.html

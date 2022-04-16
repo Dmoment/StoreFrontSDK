@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://demo.getvendo.com/api/v2/storefront/cart
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer Uas3kLdWXtmLdQWrBvUI2mVFte97qPXIhYziugn7iUE
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.10.0
+      X-Vendo-Order-Token:
+      - Order token
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 16 Apr 2022 07:24:43 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"e616334b19cbcc9f126f19e824918d93"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Vary:
+      - Origin, Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Request-Id:
+      - fc5788e1-1744-4668-8334-307fa63a9cf2
+      X-Runtime:
+      - '0.063015'
+      X-Xss-Protection:
+      - '0'
+      Cf-Cache-Status:
+      - BYPASS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6fcb2ecedb521c55-DEL
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"f4495c31-e87c-4ea5-825c-410436aee1a6","type":"cart","attributes":{"number":"R861368695","item_total":"0.0","total":"0.0","ship_total":"0.0","adjustment_total":"0.0","created_at":"2022-04-12T11:20:33.525-05:00","updated_at":"2022-04-12T11:20:33.525-05:00","completed_at":null,"included_tax_total":"0.0","additional_tax_total":"0.0","display_additional_tax_total":"$0.00","display_included_tax_total":"$0.00","tax_total":"0.0","currency":"USD","state":"cart","token":"QJ1_FD5JFKong4YxuIt55w1649780433489","email":"vendo@example.com","display_item_total":"$0.00","display_ship_total":"$0.00","display_adjustment_total":"$0.00","display_tax_total":"$0.00","promo_total":"0.0","display_promo_total":"$0.00","item_count":0,"special_instructions":null,"display_total":"$0.00","pre_tax_item_amount":"0.0","display_pre_tax_item_amount":"$0.00","pre_tax_total":"0.0","display_pre_tax_total":"$0.00","shipment_state":null,"payment_state":null,"public_metadata":{}},"relationships":{"line_items":{"data":[]},"variants":{"data":[]},"promotions":{"data":[]},"payments":{"data":[]},"shipments":{"data":[]},"user":{"data":{"id":"890ad4b6-8359-4413-8cc3-c444532e01b3","type":"user"}},"billing_address":{"data":null},"shipping_address":{"data":null}}}}'
+  recorded_at: Sat, 16 Apr 2022 07:24:43 GMT
+recorded_with: VCR 6.1.0

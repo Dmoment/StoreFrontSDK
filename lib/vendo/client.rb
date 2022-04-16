@@ -6,13 +6,11 @@ module Vendo
     API_ENDPOINT = 'https://demo.getvendo.com/api/v2/storefront'.freeze
 
     attr_accessor :order_token
-    attr_reader :oauth_token, :user_name, :password
+    attr_reader :oauth_token
 
-    def initialize(oauth_token = nil, order_token = nil, user_name = nil, password = nil)
+    def initialize(oauth_token = nil, order_token = nil)
       @oauth_token = oauth_token
       @order_token = order_token
-      @user_name = user_name
-      @password = password
     end
 
     def connection

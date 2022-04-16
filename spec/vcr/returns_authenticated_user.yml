@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://demo.getvendo.com/spree_oauth/token
+    body:
+      encoding: UTF-8
+      string: '{"grant_type":"password","username":"vendo@example.com","password":"vendo123"}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.10.0
+      Authorization:
+      - Bearer
+      X-Vendo-Order-Token:
+      - Order token
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 16 Apr 2022 05:40:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store
+      Etag:
+      - W/"fbde159bb600c7c9e6fabadf74a40e4d"
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Request-Id:
+      - c6458a39-0a18-470c-b16b-ed63f196828e
+      X-Runtime:
+      - '0.030817'
+      X-Xss-Protection:
+      - '0'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6fca95c97a798e74-DEL
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access_token":"aAoin5s2AEZGuaMGW9CQKC_TLW4izsyAYN89AJvIgnQ","token_type":"Bearer","expires_in":7200,"refresh_token":"GZHhJlFcDL6k4Es4z34ptxcWtkUfjkTO8klZTedPmaI","created_at":1650087615}'
+  recorded_at: Sat, 16 Apr 2022 05:40:16 GMT
+recorded_with: VCR 6.1.0

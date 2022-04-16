@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://demo.getvendo.com/api/v2/storefront/account
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer Uas3kLdWXtmLdQWrBvUI2mVFte97qPXIhYziugn7iUE
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.10.0
+      X-Vendo-Order-Token:
+      - Order token
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 16 Apr 2022 06:57:53 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"8e5ee1febad8ca649494287d2eaab76d"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Vary:
+      - Origin, Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Request-Id:
+      - 05fd37cf-45ec-453e-8b88-97c1e9433319
+      X-Runtime:
+      - '0.039755'
+      X-Xss-Protection:
+      - '0'
+      Cf-Cache-Status:
+      - BYPASS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6fcb0781786c1b73-DEL
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"890ad4b6-8359-4413-8cc3-c444532e01b3","type":"user","attributes":{"email":"vendo@example.com","first_name":"joseph","last_name":"gwaka","public_metadata":{},"store_credits":0,"completed_orders":0},"relationships":{"default_billing_address":{"data":null},"default_shipping_address":{"data":null}}}}'
+  recorded_at: Sat, 16 Apr 2022 06:57:53 GMT
+recorded_with: VCR 6.1.0

@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: https://demo.getvendo.com/api/v2/storefront/cart/apply_coupon_code
+    body:
+      encoding: UTF-8
+      string: '{"coupon_code":"DISCOUNT10"}'
+    headers:
+      Authorization:
+      - Bearer Uas3kLdWXtmLdQWrBvUI2mVFte97qPXIhYziugn7iUE
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Date:
+      - Sat, 16 Apr 2022 08:47:31 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Request-Id:
+      - e78aba0f-b9ff-498b-ac87-4bae8750dd42
+      X-Runtime:
+      - '0.057434'
+      X-Xss-Protection:
+      - '0'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6fcba8199c118ae8-DEL
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"error":"The coupon code you entered doesn''t exist. Please try again."}'
+  recorded_at: Sat, 16 Apr 2022 08:47:32 GMT
+recorded_with: VCR 6.1.0
