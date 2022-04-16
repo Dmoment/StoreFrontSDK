@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://demo.getvendo.com/api/v2/storefront/cart/add_item
+    body:
+      encoding: UTF-8
+      string: '{"variant_id":"980a80d5-f51b-4065-b3a0-622fc5cb6bf6","quantity":5,"public_metadata":{"total_weight":3250},"private_metadata":{"had_same_cart_items":true}}'
+    headers:
+      Authorization:
+      - Bearer Uas3kLdWXtmLdQWrBvUI2mVFte97qPXIhYziugn7iUE
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.10.0
+      X-Vendo-Order-Token:
+      - Order token
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Sat, 16 Apr 2022 07:39:16 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Request-Id:
+      - ffa3fe94-771b-4c56-8678-a63015efa85c
+      X-Runtime:
+      - '0.033616'
+      X-Xss-Protection:
+      - '0'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6fcb44215bcf1b64-DEL
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"error":"The resource you were looking for could not be found."}'
+  recorded_at: Sat, 16 Apr 2022 07:39:17 GMT
+recorded_with: VCR 6.1.0

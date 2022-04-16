@@ -20,7 +20,19 @@ Or install it yourself as:
 
     $ gem install vendo
 
-## Usage
+## Available API methods
+
+API methods are available as class instance methods
+
+```ruby
+    #Authenticate by access token
+    client = Vendo::Client.new(oauth_token => 'your personal access token')
+
+    #Authentication by username/password
+    client = Vendo::Client.new
+    client.login(grant_type: "password", username: "vendo@example.com", password: "vendo123")
+
+```
 
 TODO: Write usage instructions here
 
