@@ -33,7 +33,7 @@ API methods are available as class instance methods
     client.login(grant_type: "password", username: "vendo@example.com", password: "vendo123")
 
 ```
-#Create cart on client instance
+## Create cart on client instance
 
 ```ruby
     # create cart
@@ -42,12 +42,12 @@ API methods are available as class instance methods
 
 Once cart is created then in all the other request headers order_token will be assigned
 
-# Retrieve cart
+## Retrieve cart
 ```ruby
     cart = client.cart.retrieve
 ```
 
-# Methods for Line Items
+## Methods for Line Items
 
 ```ruby
     # Add line item to cart
@@ -59,7 +59,7 @@ Once cart is created then in all the other request headers order_token will be a
     # Delete line item
     client.line_item.delete(id: id_of_line_item)
 ```
- # Methods for applying coupon code
+ ## Methods for applying coupon code
 
  ```ruby
     client.coupon_code.apply_coupon({ "coupon_code": "DISCOUNT10" })
